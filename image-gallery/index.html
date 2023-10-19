@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Minecraft Server Image Gallery</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Minecraft Server Image Gallery</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <button type="submit">Upload Image</button>
+        </form>
+    </header>
+
+    <section id="main-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="imageWrapper"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Minecraft Server. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+#main-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.buttons,
+.info,
+.social-links,
+#image-gallery,
+#video-embed {
+    margin-bottom: 2rem;
+}
+
+button,
+select {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.highlight {
+    color: #FFD700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Animations */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Swiper Gallery Styles */
+.swiper-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: calc(33.3333% - 10px);
+    margin-right: 10px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Background image for the body */
+body {
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+/* Specific background images based on time of day */
+body[data-time="morning"] {
+    background-image: url('backgrounds/morning.jpg');
+}
+
+body[data-time="noon"] {
+    background-image: url('backgrounds/noon.jpg');
+}
+
+body[data-time="night"] {
+    background-image: url('backgrounds/night.jpg');
+}
+
+body[data-time="midnight"] {
+    background-image: url('backgrounds/midnight.jpg');
+}
